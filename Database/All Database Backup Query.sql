@@ -1,5 +1,5 @@
-GO
-Declare @Location nvarchar(256) = 'E:\Backup_DB_test\'
+
+Declare @Location nvarchar(256) = 'E:\Backup_DB_test\' -- set location for backup
 declare @DatabaseName table(id INT IDENTITY NOT NULL PRIMARY KEY,name nvarchar(500))
 insert into @DatabaseName
 SELECT name  
@@ -10,20 +10,19 @@ DECLARE @id int
 SELECT @ID =1 
 
 WHILE @ID <= (SELECT MAX(ID) FROM @DatabaseName)
--- while some condition is true, then do the following
---actions between the BEGIN and END
-
 BEGIN
 
 declare @DatabseNAme nvarchar(256)
 declare @DatabseNAmeMessage nvarchar(500)
 select @DatabseNAme = name from @DatabaseName where id = @id
-declare @Path  nvarchar(256) = @Location +  @DatabseNAme
+declare @Path  nvarchar(256) = @Location +  @DatabseNAme +'.bak'
 BACKUP DATABASE @DatabseNAme
 TO DISK = @Path
    WITH FORMAT,
       MEDIANAME = @DatabseNAme,
-      NAME = @DatabseNAmeMessage;
+      NAME = @DatabseNAmeMessage
+	  ,COMPRESSION -- comment this for uncompressed backup
+	  ;
 
 
 
