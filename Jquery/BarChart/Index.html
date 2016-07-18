@@ -1,0 +1,46 @@
+﻿<html>
+<head>
+    <title>Bar Chart</title>
+</head>
+<body>
+    <style>
+        .button {
+            background-color: #2f2f2f; /* Green */
+            border: none;
+            color: white;
+            padding: 15px 32px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+        }
+    </style>
+    <script src="https://code.jquery.com/jquery-3.0.0.min.js"></script>
+    <script src="BarChart.js"></script>
+    <div style="width:100%; margin:0 auto;"><a id="btnGenerate" class="button">Click me!!</a></div>
+    <div id="verticalGraph" style="padding:30px;margin:50px; background-color:#EEEEEE; height:360px;">
+        <canvas id="canvasGraph"></canvas>
+    </div>
+    <script type="text/javascript">
+        $(function () {
+            var data = [
+            { "SN": 13, "Month": "Jun", "Year": 2015, "Data": 1.00 },
+            { "SN": 12, "Month": "Jul", "Year": 2015, "Data": 2.00 },
+            { "SN": 11, "Month": "Aug", "Year": 2015, "Data": 2.00 },
+            { "SN": 10, "Month": "Sep", "Year": 2015, "Data": 4.00 },
+            { "SN": 9, "Month": "Oct", "Year": 2015, "Data": 4.00 },
+            { "SN": 8, "Month": "Nov", "Year": 2015, "Data": 5.00 },
+            { "SN": 7, "Month": "Dec", "Year": 2015, "Data": 4.00 },
+            { "SN": 6, "Month": "Jan", "Year": 2016, "Data": 4.00 },
+            { "SN": 5, "Month": "Feb", "Year": 2016, "Data": 6.00 },
+            { "SN": 4, "Month": "Mar", "Year": 2016, "Data": 6.00 },
+            { "SN": 3, "Month": "Apr", "Year": 2016, "Data": 5.00 },
+            { "SN": 2, "Month": "May", "Year": 2016, "Data": 7.00 },
+            { "SN": 1, "Month": "Jun", "Year": 2016, "Data": 9.00 }
+            ];
+            // Calling Barchart Plugin
+            $(this).BarChart(data);
+        });
+    </script>
+</body>
+</html>

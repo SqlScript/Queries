@@ -1,0 +1,139 @@
+<html>
+<head>
+    <title>Area Chart</title>
+</head>
+<body>
+    <style>
+        .button {
+            background-color: #2f2f2f; /* Green */
+            border: none;
+            color: white;
+            padding: 15px 32px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+        }
+    </style>
+    <script src="https://code.jquery.com/jquery-3.0.0.min.js"></script>
+    <script src="AreaChart.js"></script>
+    <div style="width:100%; margin:0 auto;"><a id="btnGenerate" class="button">Click me!!</a></div>
+    <div class="divGraph" style="padding:30px;margin:50px; background-color:#EEEEEE; height:360px;">
+        <canvas id="Graph"></canvas>
+    </div>
+    <script type="text/javascript">
+        $(function () {
+            var data = {
+                "d": [
+                    {
+                        "Date": null,
+                        "Month": "Jun",
+                        "Year": "2015",
+                        "DefaultCurrency": "NPR",
+                        "TotalSalary": 87754,
+                        "FormatSalary": "87,754.49"
+                    },
+                    {
+                        "Date": null,
+                        "Month": "Jul",
+                        "Year": "2015",
+                        "DefaultCurrency": "NPR",
+                        "TotalSalary": 87754,
+                        "FormatSalary": "87,754.49"
+                    },
+                    {
+                        "Date": null,
+                        "Month": "Aug",
+                        "Year": "2015",
+                        "DefaultCurrency": "NPR",
+                        "TotalSalary": 87754,
+                        "FormatSalary": "87,754.49"
+                    },
+                    {
+                        "Date": null,
+                        "Month": "Sep",
+                        "Year": "2015",
+                        "DefaultCurrency": "NPR",
+                        "TotalSalary": 87754,
+                        "FormatSalary": "87,754.49"
+                    },
+                    {
+                        "Date": null,
+                        "Month": "Oct",
+                        "Year": "2015",
+                        "DefaultCurrency": "NPR",
+                        "TotalSalary": 87754,
+                        "FormatSalary": "87,754.49 "
+                    },
+                    {
+                        "Date": null,
+                        "Month": "Nov",
+                        "Year": "2015",
+                        "DefaultCurrency": "NPR",
+                        "TotalSalary": 106230,
+                        "FormatSalary": "106,230.24"
+                    },
+                    {
+                        "Date": null,
+                        "Month": "Dec",
+                        "Year": "2015",
+                        "DefaultCurrency": "NPR",
+                        "TotalSalary": 116623,
+                        "FormatSalary": "116,622.85 "
+                    },
+                    {
+                        "Date": null,
+                        "Month": "Jan",
+                        "Year": "2016",
+                        "DefaultCurrency": "NPR",
+                        "TotalSalary": 130286,
+                        "FormatSalary": "130,285.57"
+                    },
+                    {
+                        "Date": null,
+                        "Month": "Feb",
+                        "Year": "2016",
+                        "DefaultCurrency": "NPR",
+                        "TotalSalary": 130286,
+                        "FormatSalary": "130,285.57"
+                    },
+                    {
+                        "Date": null,
+                        "Month": "Mar",
+                        "Year": "2016",
+                        "DefaultCurrency": "NPR",
+                        "TotalSalary": 130286,
+                        "FormatSalary": "130,285.57"
+                    },
+                    {
+                        "Date": null,
+                        "Month": "Apr",
+                        "Year": "2016",
+                        "DefaultCurrency": "NPR",
+                        "TotalSalary": 137978,
+                        "FormatSalary": "137,977.88"
+                    },
+                    {
+                        "Date": null,
+                        "Month": "May",
+                        "Year": "2016",
+                        "DefaultCurrency": "NPR",
+                        "TotalSalary": 183362,
+                        "FormatSalary": "183,362.50 "
+                    },
+                    {
+                        "Date": null,
+                        "Month": "Jun",
+                        "Year": "2016",
+                        "DefaultCurrency": "NPR",
+                        "TotalSalary": 201055,
+                        "FormatSalary": "201,054.81"
+                    }
+                ]
+            };
+            // Calling Areachart Plugin
+            $(this).AreaChart(data);
+        });
+    </script>
+</body>
+</html>

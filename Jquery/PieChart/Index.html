@@ -1,0 +1,46 @@
+﻿<html>
+<head>
+    <title>Pie Chart</title>
+</head>
+<body>
+    <style>
+        .button {
+            background-color: #2f2f2f; /* Green */
+            border: none;
+            color: white;
+            padding: 15px 32px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+        }
+    </style>
+    <script src="https://code.jquery.com/jquery-3.0.0.min.js"></script>
+    <script src="PieChart.js"></script>
+    <div style="width:100%; margin:0 auto;"><a id="btnGenerate" class="button">Click me!!</a></div>
+    <!--<div id="verticalGraph" style="padding:30px;margin:50px; background-color:#EEEEEE; height:360px;">
+        <canvas id="canvasGraph"></canvas>
+    </div>-->
+    <div id="pieGraph">
+        <canvas id="canvasPieGraph" style="padding:30px;margin:50px; background-color:#EEEEEE; height:360px; width:360px"></canvas>
+    </div>
+    <script type="text/javascript">
+        $(function () {
+            var data = [
+            { "ReasonID": 1, "Reason": "Low Salary", "Total": 7 },
+            { "ReasonID": 2, "Reason": "Dissatisfaction with job", "Total": 5 },
+            { "ReasonID": 3, "Reason": "Better career prospect", "Total": 4 },
+            { "ReasonID": 4, "Reason": "Bad location", "Total": 4 },
+            { "ReasonID": 5, "Reason": "Poor working conditions", "Total": 3 },
+            { "ReasonID": 6, "Reason": "Health issues", "Total": 3 },
+            { "ReasonID": 7, "Reason": "Personality conflicts", "Total": 2 },
+            { "ReasonID": 8, "Reason": "Further education", "Total": 1 },
+            { "ReasonID": 9, "Reason": "Emigrate to other country", "Total": 1 },
+            { "ReasonID": 10, "Reason": "Dismissed", "Total": 1 }
+            ];
+            // Calling Piechart Plugin
+            $(this).PieChart(data);
+        });
+    </script>
+</body>
+</html>

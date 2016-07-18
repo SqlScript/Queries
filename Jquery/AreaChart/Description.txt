@@ -1,0 +1,1 @@
+"BindPayrollSalaryBarReport" is Function To Draw Area Chart and Example Data file is: "Data.json" file

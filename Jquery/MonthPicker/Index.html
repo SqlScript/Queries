@@ -1,0 +1,35 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>Month Picker</title>
+</head>
+<body>
+    <link href="MonthPicker.css" rel="stylesheet" />
+    <script src="https://code.jquery.com/jquery-3.0.0.min.js"></script>
+    <script src="MonthPicker.js"></script>
+    <div id="monthPicker"></div>
+    <script type="text/javascript">
+        $(function () {
+            var Conf = {
+                selector: $('#monthPicker'),
+                Action: { calPrev: 'x.Prevs', calNext: 'x.Nexts', calMonth: 'x.Month' },
+                Current: { cYear: 2016, cMonth: 4 },
+                title:"MonthPicker"
+            };
+            $(this).MonthPicker(Conf);
+            var Next = function () {
+                // Code run after clicking Next 
+                alert("Next Clicked");
+            }
+            var Prev = function () {
+                // Code run after clicking Next 
+                alert("Prev Clicked");
+            }
+            var Month = function () {
+                alert(arguments[0]);
+            }
+            x = { Prevs: Prev, Nexts: Next, Month: Month };
+        });
+    </script>
+</body>
+</html>

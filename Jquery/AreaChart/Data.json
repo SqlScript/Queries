@@ -1,0 +1,121 @@
+{
+    "d": [
+        {
+            "__type": "SageFrame.HRISReportPayRoll.PayrollGraphInfo",
+            "Date": null,
+            "Month": "Jun",
+            "Year": "2015",
+            "DefaultCurrency": "NPR",
+            "TotalSalary": 87754,
+            "FormatSalary": "87,754.49"
+        },
+        {
+            "__type": "SageFrame.HRISReportPayRoll.PayrollGraphInfo",
+            "Date": null,
+            "Month": "Jul",
+            "Year": "2015",
+            "DefaultCurrency": "NPR",
+            "TotalSalary": 87754,
+            "FormatSalary": "87,754.49"
+        },
+        {
+            "__type": "SageFrame.HRISReportPayRoll.PayrollGraphInfo",
+            "Date": null,
+            "Month": "Aug",
+            "Year": "2015",
+            "DefaultCurrency": "NPR",
+            "TotalSalary": 87754,
+            "FormatSalary": "87,754.49"
+        },
+        {
+            "__type": "SageFrame.HRISReportPayRoll.PayrollGraphInfo",
+            "Date": null,
+            "Month": "Sep",
+            "Year": "2015",
+            "DefaultCurrency": "NPR",
+            "TotalSalary": 87754,
+            "FormatSalary": "87,754.49"
+        },
+        {
+            "__type": "SageFrame.HRISReportPayRoll.PayrollGraphInfo",
+            "Date": null,
+            "Month": "Oct",
+            "Year": "2015",
+            "DefaultCurrency": "NPR",
+            "TotalSalary": 87754,
+            "FormatSalary": "87,754.49 "
+        },
+        {
+            "__type": "SageFrame.HRISReportPayRoll.PayrollGraphInfo",
+            "Date": null,
+            "Month": "Nov",
+            "Year": "2015",
+            "DefaultCurrency": "NPR",
+            "TotalSalary": 106230,
+            "FormatSalary": "106,230.24"
+        },
+        {
+            "__type": "SageFrame.HRISReportPayRoll.PayrollGraphInfo",
+            "Date": null,
+            "Month": "Dec",
+            "Year": "2015",
+            "DefaultCurrency": "NPR",
+            "TotalSalary": 116623,
+            "FormatSalary": "116,622.85 "
+        },
+        {
+            "__type": "SageFrame.HRISReportPayRoll.PayrollGraphInfo",
+            "Date": null,
+            "Month": "Jan",
+            "Year": "2016",
+            "DefaultCurrency": "NPR",
+            "TotalSalary": 130286,
+            "FormatSalary": "130,285.57"
+        },
+        {
+            "__type": "SageFrame.HRISReportPayRoll.PayrollGraphInfo",
+            "Date": null,
+            "Month": "Feb",
+            "Year": "2016",
+            "DefaultCurrency": "NPR",
+            "TotalSalary": 130286,
+            "FormatSalary": "130,285.57"
+        },
+        {
+            "__type": "SageFrame.HRISReportPayRoll.PayrollGraphInfo",
+            "Date": null,
+            "Month": "Mar",
+            "Year": "2016",
+            "DefaultCurrency": "NPR",
+            "TotalSalary": 130286,
+            "FormatSalary": "130,285.57"
+        },
+        {
+            "__type": "SageFrame.HRISReportPayRoll.PayrollGraphInfo",
+            "Date": null,
+            "Month": "Apr",
+            "Year": "2016",
+            "DefaultCurrency": "NPR",
+            "TotalSalary": 137978,
+            "FormatSalary": "137,977.88"
+        },
+        {
+            "__type": "SageFrame.HRISReportPayRoll.PayrollGraphInfo",
+            "Date": null,
+            "Month": "May",
+            "Year": "2016",
+            "DefaultCurrency": "NPR",
+            "TotalSalary": 183362,
+            "FormatSalary": "183,362.50 "
+        },
+        {
+            "__type": "SageFrame.HRISReportPayRoll.PayrollGraphInfo",
+            "Date": null,
+            "Month": "Jun",
+            "Year": "2016",
+            "DefaultCurrency": "NPR",
+            "TotalSalary": 201055,
+            "FormatSalary": "201,054.81"
+        }
+    ]
+}
